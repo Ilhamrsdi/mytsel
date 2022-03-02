@@ -18,7 +18,7 @@ class HomeView extends GetView<HomeController> {
             ),
             children: [
               TextSpan(
-                text: "Muhammad",
+                text: "User",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class HomeView extends GetView<HomeController> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "081290112333",
+                                  "08223212313124",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -104,7 +104,7 @@ class HomeView extends GetView<HomeController> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "Rp34.000",
+                                  "Rp.100.000",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 26,
@@ -140,7 +140,7 @@ class HomeView extends GetView<HomeController> {
                                 ),
                                 children: [
                                   TextSpan(
-                                    text: "19 April 2020",
+                                    text: "31 Maret 2055",
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 16,
@@ -172,7 +172,7 @@ class HomeView extends GetView<HomeController> {
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
-                                    "172",
+                                    "400",
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 16,
@@ -195,17 +195,17 @@ class HomeView extends GetView<HomeController> {
                         children: [
                           StatusCard(
                             title: "Internet",
-                            data: "12.19",
+                            data: "99.99",
                             satuan: "GB",
                           ),
                           StatusCard(
                             title: "Telepon",
-                            data: "0",
+                            data: "800",
                             satuan: "Min",
                           ),
                           StatusCard(
                             title: "SMS",
-                            data: "23",
+                            data: "99",
                             satuan: "SMS",
                           ),
                         ],
@@ -238,8 +238,7 @@ class HomeView extends GetView<HomeController> {
                               ),
                               SizedBox(height: 20),
                               Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   ItemKategori(
                                     title: "Internet",
@@ -261,8 +260,7 @@ class HomeView extends GetView<HomeController> {
                               ),
                               SizedBox(height: 30),
                               Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   ItemKategori(
                                     title: "Hiburan",
@@ -285,8 +283,7 @@ class HomeView extends GetView<HomeController> {
                               SizedBox(height: 30),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.end,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     "Terbaru dari Telkomsel",
@@ -473,9 +470,7 @@ class ItemNav extends StatelessWidget {
         Container(
           height: 30,
           child: Image.asset(
-            (status == true)
-                ? "assets/icons/$icon-active.png"
-                : "assets/icons/$icon.png",
+            (status == true) ? "assets/icons/$icon-active.png" : "assets/icons/$icon.png",
             fit: BoxFit.contain,
           ),
         ),

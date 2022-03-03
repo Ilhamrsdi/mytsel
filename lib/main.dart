@@ -11,20 +11,15 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Application",
-      initialRoute: Routes.HOME,
-      getPages: AppPages.routes,
-    );
     return FutureBuilder(
-      future: Future.delayed(Duration(seconds: 3)),
+      future: Future.delayed(Duration(seconds: 5)),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return SplashScreen();
+          return splashScreen();
         } else {
           return GetMaterialApp(
             debugShowCheckedModeBanner: false,
+            theme: ThemeData(primarySwatch: Colors.red),
             title: "Application",
             initialRoute: Routes.LOGIN,
             getPages: AppPages.routes,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+class splashScreen extends StatelessWidget {
+  const splashScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,12 +11,11 @@ class SplashScreen extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color(0xFFEC2028),
         body: Center(
-          child: Container(
-            width: Get.width * 0.5,
-            height: Get.width * 0.5,
-            child: Image.asset("assets/logo/logo-splash.png"),
-          ),
-        ),
+            child: Container(
+          width: Get.width * 0.5,
+          height: Get.height * 0.5,
+          child: Image.asset('assets/splash.png'),
+        )),
       ),
     );
   }
